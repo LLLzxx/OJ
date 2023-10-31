@@ -9,17 +9,18 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+
     <!--gav信息-->
     <name>loj-codesandbox-sdk</name>
-    <groupId>io.gitee.lll-zxx</groupId>
+    <groupId>io.github.LLLzxx</groupId>
     <artifactId>loj-codesandbox-sdk</artifactId>
     <version>1.0.0</version>
-    <description>loj-codesandbox-sdk</description>
+    <description>Java代码判题沙箱</description>
 
     <properties>
         <serverId>ossrh</serverId><!-- 服务id 也就是setting.xml中的servers.server.id -->
         <java.version>1.8</java.version>
-        <projectUrl>https://gitee.com/LLL-zxx/oj-commen.git</projectUrl>
+        <projectUrl>https://github.com/LLLzxx/OJ.git</projectUrl>
     </properties>
 
 
@@ -31,6 +32,7 @@
             <url>${projectUrl}</url>
         </developer>
     </developers>
+
 
     <!--以下部分内容不需要修改，直接复制咱贴即可-->
     <url>${projectUrl}</url>
@@ -130,7 +132,7 @@
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
                 <version>1.6.7</version>
-                <extensions>true</extensions>
+                <extensions>false</extensions>
                 <configuration>
                     <serverId>${serverId}</serverId>
                     <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
