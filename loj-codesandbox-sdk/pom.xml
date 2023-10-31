@@ -132,11 +132,11 @@
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
                 <version>1.6.7</version>
-                <extensions>false</extensions>
+                <extensions>true</extensions>
                 <configuration>
                     <serverId>${serverId}</serverId>
                     <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    <autoReleaseAfterClose>false</autoReleaseAfterClose>
                 </configuration>
             </plugin>
         </plugins>
