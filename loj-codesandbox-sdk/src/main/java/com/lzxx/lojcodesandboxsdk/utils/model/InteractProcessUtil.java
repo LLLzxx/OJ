@@ -23,7 +23,7 @@ public class InteractProcessUtil implements ProcessUtils {
         List<ExecuteMessage> executeMessageList = new ArrayList<>();
         for (String input : inputList) {
             // Linux下的命令
-             String runCmd = String.format("/software/jdk1.8.0_301/bin/java -Xmx256m -Dfile.encoding=UTF-8 -cp %s Main", userCodeParentPath);
+             String runCmd = String.format("/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Xmx256m -Dfile.encoding=UTF-8 -cp %s Main", userCodeParentPath);
 
             // Windows下的命令
             // String runCmd = String.format("java -Xmx256m -Dfile.encoding=UTF-8 -cp %s;%s -Djava.security.manager=%s Main", userCodeParentPath, securityManagerPath, securityManagerPathClassName);

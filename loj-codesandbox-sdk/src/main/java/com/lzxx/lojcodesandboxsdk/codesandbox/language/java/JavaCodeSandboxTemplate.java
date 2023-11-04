@@ -42,7 +42,6 @@ public abstract class JavaCodeSandboxTemplate implements CodeSandbox {
         // 3.编译成功，则【运行代码】
         List<ExecuteMessage> executeMessageList = runFile(model, userCodeFile, inputList);
 
-
         // 4.收集整理输出结果
         ExecuteCodeResponse outputResponse = getOutputResponse(userCodeFile, executeMessageList);
 

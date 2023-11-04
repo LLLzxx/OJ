@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public abstract class CppCodeSandboxTemplate implements CodeSandbox {
+
     private static final String GLOBAL_CODE_DIR_NAME = "tmpCode";
 
     private static final String GLOBAL_JAVA_CLASS_NAME = "Main.java";
